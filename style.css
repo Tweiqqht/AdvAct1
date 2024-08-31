@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navBar {
+    z-index: 100;
+    background-color: #181818;
+    position: fixed;
+    top: 0px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.navBar ul {
+    display: flex;
+    gap: 50px;
+}
+
+.navBar li {
+    z-index: 2;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline 2px white;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    text-decoration: underline 2px rgb(244, 48, 68);
+    color: rgb(244, 48, 68);
+}
+
+.home {
+    background: linear-gradient(to bottom, #181818, #181818, #282828);
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail {
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 75vh;
+    position: relative;
+}
+
+.detail h1 {
+    color: white;
+    font-size: 50px;
+    display: inline-block
+}
+
+.detail b {
+    color: white;
+    font-size: 30px;
+    display: inline;
+}
+
+.detail p {
+    top: -30px;
+    left: 20px;
+    position: relative;
+    color: rgb(200, 200, 200);
+    font-size: 25px;
+}
+
+.detail a {
+    font-size: large;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+    border: 3px solid rgb(204, 204, 204);
+    text-decoration: none;
+}
+
+.detail a:hover {
+    color: white;
+    background-color: rgb(244, 48, 68);
+    border-color: rgb(244, 48, 68);
+}
+
+.homeContainer {
+    right: 50px;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 425px;
+    width: 425px;
+}
+
+.hexagon3 {
+    top: -55px;
+    position: absolute;
+}
+
+.hexagon {
+    background-color: rgb(204, 204, 204);
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(
+        25% 5%,
+        75% 5%,
+        100% 50%,
+        75% 95%,
+        25% 95%,
+        0% 50%
+    );
+    transform: rotate(90deg);
+}
+
+.homeContainer img {
+    display: flex;
+    width: auto;
+    position: relative;
+    transform: rotate(-90deg);
+}
+
+.hcdc {
+    top: 25px;
+    left: 25px;
+    height: 150px;
+}
+
+.cet {
+    top: 15px;
+    left: 15px;
+    height: 175px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+    height: 100vh;
+}
+
+.aboutContainer {
+    background-color: rgb(204, 204, 204);
+    opacity: 75%;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(10vh, 1fr));
+    grid-template-rows: repeat(10, minmax(7.5vh, auto));
+    position: relative;
+    top: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.aboutTitle {
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+}
+
+.skillTitle {
+    grid-row: 1 / 2;
+    grid-column: 7/11;
+}
+
+.aboutTitle, .skillTitle {
+    padding: 5px 0;
+}
+
+.aboutTitle, .skillTitle, .description, .skills{
+    border: 3px solid black;
+    display: flex;
+    justify-content:center;
+    text-align: justify;
+}
+.description {
+    position: absolute;
+    grid-row: 2/11;
+    grid-column: 1/7;
+    height: 100%;
+    padding: 25px 25px;
+}
+
+.description p {
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skills {
+    border: 3px solid black;
+    padding: 25px 0;
+    grid-row: 2/11;
+    grid-column: 7/11;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282828;
+}
+
+.Contact {
+    position: absolute;
+    margin-top: -450px;
+    z-index: 1;
+    color: rgb(86, 86, 86);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 122px;
+}
+
+.msg {
+    margin-left: 20px;
+    margin-top: -450px;
+    position: absolute;
+    z-index: 2;
+    color: rgb(244, 48, 68) ;
+    font-size: 44px;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactHead {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 100px 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 175px;
+    width: 500px;
+    height: 400px;
+    overflow-y: hidden;
+}
+
+.contactBody {
+    color: rgb(196, 196, 196);
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.Addresses {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 175px;
+    width: 500px;
+    height: 400px;
+}
+
+.fbAddress, .hcdcAddress {
+    margin-left: 50px;
+}
+
+.gmailAddress, .fbName {
+    position: relative;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 60px;
+    padding: 50px 0;
+    font-size: 30px;
+}
+
+.Addresses a {
+    margin-top: 60px;
+    transform: scale(5);
+    text-decoration: none;
+}
+
+.fa-envelope {
+    position: absolute;
+    color: black;
+}
+
+.fa-facebook {
+    position: absolute;
+    color: rgb(66, 103, 178);
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        height: auto;
+    }
+
+    .navBar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navBar li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* lazy to make responsize */
